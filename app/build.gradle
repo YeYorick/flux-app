@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace "top.xyzsl.flux"
+    namespace "top.xyzsl.zf"
     compileSdk 34
 
     defaultConfig {
-        applicationId "top.xyzsl.flux"
+        applicationId "top.xyzsl.zf"
         minSdk 23
         targetSdk 34
         versionCode 1
