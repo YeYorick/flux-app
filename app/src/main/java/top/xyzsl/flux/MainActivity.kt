@@ -1,4 +1,4 @@
-package top.xyzsl.flux
+package top.xyzsl.zf
 
 import android.content.Intent
 import android.net.Uri
@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
 
     private lateinit var webView: WebView
-    private val homeUrl = "https://flux.xyzsl.top/"
+    private val homeUrl = "https://zf.xyzsl.top/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         webView.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView, req: WebResourceRequest): Boolean {
                 val host = req.url.host ?: ""
-                if (host.endsWith("flux.xyzsl.top")) return false
+                if (host.endsWith("zf.xyzsl.top")) return false
 
                 return try {
                     startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(req.url.toString())))
